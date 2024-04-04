@@ -1,0 +1,30 @@
+
+POST http://localhost:3000/api/Tipo_Documento HTTP/1.1
+Content-Type: application/json
+
+{
+    "t_doc":"NIT",
+    "desc_tdoc":"Numero de identificacion tributario",
+    "tdoc_estado":"1"
+}
+
+###
+GET http://localhost:3000/api/Tipo_Documento/ HTTP/1.1
+
+###
+GET http://localhost:3000/api/Tipo_Documento/6545bcfe7fa59662e9dc6121 HTTP/1.1
+
+###
+PUT http://localhost:3000/api/Tipo_Documento/6545da0108e52d94069ac94e HTTP/1.1
+content-Type: application/json
+
+
+{
+    "t_doc":"NIT",
+    "desc_tdoc":"Numero de identificacion tributario",
+    "tdoc_estado":"1"
+}
+
+###
+DELETE http://localhost:3000/api/Tipo_Documento/654c44d89ac21a637e579aa7 HTTP/1.1
+

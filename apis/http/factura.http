@@ -1,0 +1,39 @@
+POST http://localhost:3000/api/Factura HTTP/1.1
+Content-Type: application/json
+
+{
+    "id_factura":"f1",
+    "id_usuario":"654c7eca9bfcb3facc7ea558",
+    "Nombre_usuario":"Montfer",
+    "Apellido_usuario":"Rodrigez Daza",
+    "Fecha_venta":"09/11/2023",
+    "Precio_subtotal_venta":"1500",
+    "Iva_productos":"19",
+    "Precio_total_compra":"2000"
+}
+
+###
+GET http://localhost:3000/api/Factura HTTP/1.1
+
+###
+GET http://localhost:3000/api/Factura/654a6a9e0ee535842ba578cd HTTP/1.1
+
+###
+PUT http://localhost:3000/api/Factura/654a6a9e0ee535842ba578cd HTTP/1.1
+content-Type: application/json
+
+{
+    "id_factura":"f1",
+    "id_producto":"654a6f00f89f302e5a743cb2",
+    "id_usuario":"654c7eca9bfcb3facc7ea558",
+    "Nombre_usuario:":"Mont fer",
+    "Apellido_usuario":"Rodrigez Daza",
+    "Fecha_venta":"09/11/2023",
+    "cantidad":"2",
+    "Precio_subtotal_venta":"1500",
+    "Iva_productos":"19",
+    "Precio_total_compra":"2000"
+}
+
+###
+DELETE http://localhost:3000/api/Factura/654d0559e67d253cc0e4f708 HTTP/1.1

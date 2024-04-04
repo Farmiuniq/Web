@@ -1,0 +1,31 @@
+
+POST http://localhost:3000/api/seguridad HTTP/1.1
+Content-Type: application/json
+
+{
+    "n_pregunta":"CC",
+    "pregunta_seg":"Cual es el nombre de tu primer mascota?",
+    "estado_pregunta":"Guffi"
+}
+
+###
+GET http://localhost:3000/api/seguridad HTTP/1.1
+
+###
+GET http://localhost:3000/api/seguridad/6545d7b65c7deadc7a744b27 HTTP/1.1
+
+###
+PUT http://localhost:3000/api/seguridad/6545bce87fa59662e9dc611d HTTP/1.1
+content-Type: application/json
+
+{
+   
+    "n_pregunta": "1",
+    "pregunta_seg": "Cual es el nombre de tu primera novia?",
+    "estado_pregunta": "laura sofia"
+   
+  }
+
+###
+DELETE http://localhost:3000/api/seguridad/6545d7995c7deadc7a744b25 HTTP/1.1
+

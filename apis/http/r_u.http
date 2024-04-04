@@ -1,0 +1,29 @@
+POST http://localhost:3000/api/roles_has_usuario HTTP/1.1
+Content-Type: application/json
+
+{
+   "codigo_Rol":"654a813af89f302e5a743cd0",
+    "id_usuario":"65c2b67fa3f0cdf56ce40e6e",
+    "estado_rol":"1"
+
+}
+
+###
+GET http://localhost:3000/api/roles_has_usuario  HTTP/1.1
+
+###
+GET  http://localhost:3000/api/roles_has_usuario/6568e7487e1b8ad96f9ba1c3 HTTP/1.1
+
+###
+PUT  http://localhost:3000/api/roles_has_usuario/6568e7487e1b8ad96f9ba1c3 HTTP/1.1
+content-Type: application/json
+
+
+{
+   "codigo_Rol":"1",
+    "desc_Rol":"drogas",
+}
+
+
+###
+DELETE  http://localhost:3000/api/roles_has_usuario/6568e7487e1b8ad96f9ba1c3 HTTP/1.1

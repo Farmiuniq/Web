@@ -1,0 +1,26 @@
+
+POST http://localhost:3000/api/roles HTTP/1.1
+Content-Type: application/json
+
+{
+    "codigo_Rol":"3",
+    "desc_Rol":"cliente"
+}
+
+###
+GET http://localhost:3000/api/roles HTTP/1.1
+
+###
+GET http://localhost:3000/api/roles/6545d6f6e21759335ffa7280 HTTP/1.1
+
+###
+PUT http://localhost:3000/api/roles/6545bc2f7fa59662e9dc6117 HTTP/1.1
+content-Type: application/json
+
+{
+    "codigo_Rol":"3",
+    "desc_Rol":"Administrador"
+}
+
+###
+DELETE http://localhost:3000/api/roles/65caed312b6b380807af49bd HTTP/1.1

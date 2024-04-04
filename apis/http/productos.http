@@ -1,0 +1,44 @@
+
+POST http://localhost:3000/api/productos HTTP/1.1
+Content-Type: application/json
+
+{
+    "id_productos":"V01",
+    "id_proveedores":"P1",
+    "Nombre":"shampoo_konzil_700ml",
+    "Marca":"Konzil",
+    "Forma_farmaceutica":"solida",
+    "Lote_fabricacion":"12/12/2025",
+    "Fecha_caducidad":"02/12/2026",
+    "Precio_unitario":"1000",
+    "Precio_total":"10000",
+    "Stock_maximo":"5",
+    "Stock_minimo":"3"
+}
+
+###
+GET http://localhost:3000/api/productos HTTP/1.1
+
+###
+GET http://localhost:3000/api/productos/654a6a9e0ee535842ba578cd HTTP/1.1
+
+###
+PUT http://localhost:3000/api/productos/654a6a9e0ee535842ba578cd HTTP/1.1
+content-Type: application/json
+
+{
+    "id_productos":"V01",
+    "id_proveedores":"P1",
+    "Nombre":"shampoo_konzil_700ml",
+    "Marca":"Konzil",
+    "Forma_farmaceutica":"solida",
+    "Lote_fabricacion":"12/12/2025",
+    "Fecha_caducidad":"25/01/2026",
+    "Precio_unitario":"1000",
+    "Precio_total":"20000",
+    "Stock_maximo":"5",
+    "Stock_minimo":"3"
+}
+
+###
+DELETE http://localhost:3000/api/productos/654a6a9e0ee535842ba578cd HTTP/1.1

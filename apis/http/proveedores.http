@@ -1,0 +1,30 @@
+
+POST http://localhost:3000/api/proveedores HTTP/1.1
+Content-Type: application/json
+
+{
+    "id_proveedores":"P2",
+    "Nombre_proveedores":"johnson & johnson",
+    "telefono_proveedores":"900228400",
+    "email_proveedores": "clientes@ csces.jnj.com"
+}
+
+###
+GET http://localhost:3000/api/proveedores/ HTTP/1.1
+
+###
+GET http://localhost:3000/api/proveedores/6545e00d1581e1593790dd35 HTTP/1.1
+
+###
+PUT http://localhost:3000/api/proveedores/6545bc237fa59662e9dc6115 HTTP/1.1
+content-Type: application/json
+
+{
+    "id_proveedores":"M1",
+    "Nombre_proveedores":"tecnoquimicas",
+    "telefono_proveedores":"3152345678",
+    "email_proveedores": "info.data@tecnoquimicas.com"
+}
+
+###
+DELETE http://localhost:3000/api/proveedores/6545d1b0668a7293ea37fbdb HTTP/1.1

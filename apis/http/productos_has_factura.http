@@ -1,0 +1,27 @@
+POST http://localhost:3000/api/productos_has_factura HTTP/1.1
+Content-Type: application/json
+
+{
+    "id_factura":"654d0a6126bb71d43352f0d9",
+    "id_productos":"654a7002f89f302e5a743cb4",
+    "Cantidad":"3"
+}
+
+###
+GET http://localhost:3000/api/productos_has_factura  HTTP/1.1
+
+###
+GET http://localhost:3000/api/productos_has_factura /654a6a9e0ee535842ba578cd HTTP/1.1
+
+###
+PUT http://localhost:3000/api/productos_has_factura /654a6a9e0ee535842ba578cd HTTP/1.1
+content-Type: application/json
+
+{
+    "id_factura":"654d0a6126bb71d43352f0d9",
+    "id_productos":"654a7002f89f302e5a743cb4",
+    "Cantidad":"3"
+}
+
+###
+DELETE http://localhost:3000/api/productos_has_factura /654a6a9e0ee535842ba578cd HTTP/1.1

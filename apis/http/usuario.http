@@ -1,0 +1,38 @@
+//agregar
+POST http://localhost:3000/api/usuario HTTP/1.1
+Content-Type: application/json
+
+{
+    "t_doc":"656b6036606846c9f776b883",
+    "id_usuario":"103547874",
+    "nombre":"Mont Fer ",
+    "email":"Rodrigez@gmail.com",
+    "password": "mf319",
+    "rol": "6545e6901581e1593790dd45"
+}
+
+###
+GET http://localhost:3000/api/usuario HTTP/1.1
+
+###
+GET http://localhost:3000/api/user/6545be2e7fa59662e9dc6126 HTTP/1.1
+
+###
+PUT http://localhost:3000/api/user/6545bd3b7fa59662e9dc6124 HTTP/1.1
+content-Type: application/json
+
+{
+    "tipo_documento": "CC",
+    "id_usuario": "1032375745",
+    "nombre": "Olos Alberto",
+    "apellido": "Murillo",
+    "telefono": 111222,
+    "password": "1234",
+    "preg_seguridad": "2",
+    "resp_seguridad": "lucas"
+  }
+
+###
+DELETE http://localhost:3000/api/user/654420a8a3c1ca72fa3d4bd7 HTTP/1.1
+
+

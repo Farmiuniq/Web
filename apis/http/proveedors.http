@@ -1,0 +1,31 @@
+POST http://localhost:3000/api/proveedores HTTP/1.1
+Content-Type: application/json
+
+{
+   "id_proveedores":"p1",
+    "Nomb_proveedor":"drogas",
+    "Tel_proveedor":"321452",
+    "Email_proveedor":"dorgas@ha.com"
+}
+
+###
+GET http://localhost:3000/api/proveedores  HTTP/1.1
+
+###
+GET  http://localhost:3000/api/proveedores/6568e7487e1b8ad96f9ba1c3 HTTP/1.1
+
+###
+PUT  http://localhost:3000/api/proveedores/6568e7487e1b8ad96f9ba1c3 HTTP/1.1
+content-Type: application/json
+
+
+{
+   "id_proveedores":"p1",
+    "Nomb_proveedor":"drogas",
+    "Tel_proveedor":"1111",
+    "Email_proveedor":"dorgas@jaja.com"
+}
+
+
+###
+DELETE  http://localhost:3000/api/proveedores/6568e7487e1b8ad96f9ba1c3 HTTP/1.1

@@ -1,0 +1,23 @@
+POST http://localhost:3000/api/recuperar HTTP/1.1
+Content-Type: application/json
+
+{
+   "email":"alexandraalarcon200416@gmail.com"
+}
+
+###
+GET http://localhost:3000/api/recuperar  HTTP/1.1
+
+###
+GET  http://localhost:3000/api/recuperar/6568e7487e1b8ad96f9ba1c3 HTTP/1.1
+
+###
+PUT  http://localhost:3000/api/recuperar/6568e7487e1b8ad96f9ba1c3 HTTP/1.1
+content-Type: application/json
+
+{
+   "email":"alexandraalarcon200416@gmail.com",
+}
+
+###
+DELETE  http://localhost:3000/api/recuperar/6568e7487e1b8ad96f9ba1c3 HTTP/1.1
